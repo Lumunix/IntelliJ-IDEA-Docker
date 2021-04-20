@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  intellij:
+    build: .
+    image: intellij-idea-docker
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - intellij-data:/home/developer/.IdeaIC2021.1
+      - java-projects:/home/developer/IdeaProjects
+      - /tmp/.X11-unix:/tmp/.X11-unix
+
+volumes:
+  intellij-data:
+  java-projects:

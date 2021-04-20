@@ -7,7 +7,6 @@ ARG IDEA_SOURCE=https://download.jetbrains.com/idea/ideaIC-${IDEA_VERSION}.tar.g
 ARG IDEA_LOCAL_DIR=.IdeaIC${IDEA_VERSION}
 ENV USERNAME developer
 WORKDIR /opt/idea
-USER $USERNAME
 ENV HOME /home/$USERNAME
 
 RUN  \
@@ -15,7 +14,7 @@ RUN  \
   gcc git openssh-client less \
   libxtst-dev libxext-dev libxrender-dev libfreetype6-dev \
   libfontconfig1 libgtk2.0-0 libxslt1.1 libxxf86vm1 \
-  && rm -rf /var/lib/apt/lists/* \
+  && rm -rf /var/lib/apt/lists/*
 
 
 
@@ -31,7 +30,7 @@ RUN adduser --disabled-password --gecos '' $USERNAME && \
 
 RUN mkdir /home/$USERNAME/IdeaProjects && \
     chown $USERNAME:$USERNAME /home/$USERNAME/IdeaProjects
-RUN mkdir /home/$USERNAME/.IdeaIC2017.1 && \
+RUN mkdir /home/$USERNAME/$IDEA_LOCAL_DIR && \
     chown $USERNAME:$USERNAME /home/$USERNAME/$IDEA_LOCAL_DIR
 
 CMD [ "/opt/idea/bin/idea.sh" ]
