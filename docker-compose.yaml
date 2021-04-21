@@ -3,7 +3,7 @@ version: "3"
 services:
   intellij:
     build: .
-    image: intellij-idea-docker
+    image: lumunix/intellij-idea-docker
     environment:
       - DISPLAY=${DISPLAY}
     volumes:
