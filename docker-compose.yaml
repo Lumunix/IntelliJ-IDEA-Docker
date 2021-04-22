@@ -7,10 +7,10 @@ services:
     environment:
       - DISPLAY=${DISPLAY}
     volumes:
-      - ./intellij-idea-data:/home/developer/.IdeaIC2021.1
-      - ./IdeaProjects:/home/developer/IdeaProjects
+      - ./IntellijIdeaRoot:/root
+      - ./IdeaProjects:/root/IdeaProjects
       - /tmp/.X11-unix:/tmp/.X11-unix
 
 volumes:
-  intellij-idea-data:
+  IntellijIdeaRoot:
   IdeaProjects:

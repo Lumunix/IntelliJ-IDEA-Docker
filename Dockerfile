@@ -28,9 +28,4 @@ RUN adduser --disabled-password --gecos '' $USERNAME && \
   echo "%sudo ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
   adduser $USERNAME sudo
 
-RUN mkdir /home/$USERNAME/IdeaProjects && \
-    chown $USERNAME:$USERNAME /home/$USERNAME/IdeaProjects
-RUN mkdir /home/$USERNAME/$IDEA_LOCAL_DIR && \
-    chown $USERNAME:$USERNAME /home/$USERNAME/$IDEA_LOCAL_DIR
-
 CMD [ "/opt/idea/bin/idea.sh" ]
