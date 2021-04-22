@@ -7,8 +7,8 @@ services:
     environment:
       - DISPLAY=${DISPLAY}
     volumes:
-      - intellij-data:/home/developer/.IdeaIC2021.1
-      - java-projects:/home/developer/IdeaProjects
+      - .\intellij-data:/home/developer/.IdeaIC2021.1
+      - .\java-projects:/home/developer/IdeaProjects
       - /tmp/.X11-unix:/tmp/.X11-unix
 
 volumes:
