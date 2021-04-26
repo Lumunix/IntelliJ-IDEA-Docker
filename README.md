@@ -1,4 +1,6 @@
 # IntelliJ-IDEA-Docker
+![Project-Banner](/readme/project-banner.png)
+
 IntelliJ IDEA IDE Community Edition in a docker container
 
 
@@ -42,7 +44,7 @@ brew install xquartz
 ```
 open -a Xquartz
 ```
-[x11 Zquartz Preferences](readme/x11pref.png)
+![x11 Zquartz Preferences](readme/x11pref.png)
 
 6. Using Terminal, navigate to the folder you downloaded the project to, build the docker image.
 ```
