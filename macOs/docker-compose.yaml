@@ -5,7 +5,7 @@ services:
     build: .
     image: lumunix/intellij-idea-docker
     environment:
-      - DISPLAY=192.168.1.96:0
+      - DISPLAY=${XSERVEIP}
     volumes:
       - ./IntellijIdeaRoot:/root
       - ./IdeaProjects:/root/IdeaProjects

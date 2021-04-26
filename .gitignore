@@ -1,4 +1,9 @@
+
 IntellijIdeaRoot
 IdeaProjects
+macOs/IdeaProjects
+macOs/IntellijIdeaRoot
+windows/IdeaProjects
+windows/IntellijIdeaRoot
 # Mac
 .DS_Store
