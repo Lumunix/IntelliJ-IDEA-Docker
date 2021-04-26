@@ -14,7 +14,7 @@ IntelliJ IDEA IDE Community Edition in a docker container
 ```
 docker build -t lumunix/intellij-idea-docker .
 ```
-4. Using GWSL, navigate to the **/windows** folder, run docker compose to start Intellij
+4. Using GWSL, navigate to the **<Repo Directory>/windows** folder, run docker compose to start Intellij
 
 ```
 docker-compose up
@@ -55,7 +55,7 @@ docker build -t lumunix/intellij-idea-docker .
 socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
 ```
 
-8. Using Terminal, navigate to the **/macOs** folder, run this command, you will get a inet ip address, add the IP address to the **.env** file as follows.
+8. Using Terminal, navigate to the **<Repo Directory>/macOs** folder, run this command, you will get a inet ip address, add the IP address to the **.env** file as follows.
 ```
 ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2
 ```
@@ -64,7 +64,7 @@ ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2
 XSERVEIP=<YOUR IP FROM IFCONFIG>
 ```
 
-9. Using Terminal, navigate to the **/macOs** folder, run docker compose to start Intellij
+9. Using Terminal, navigate to the **<Repo Directory>/macOs** folder, run docker compose to start Intellij
 
 ```
 docker-compose up
