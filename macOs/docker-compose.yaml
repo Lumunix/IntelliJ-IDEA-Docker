@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  intellij:
+    build: .
+    image: lumunix/intellij-idea-docker
+    environment:
+      - DISPLAY=192.168.1.96:0
+    volumes:
+      - ./IntellijIdeaRoot:/root
+      - ./IdeaProjects:/root/IdeaProjects
+      - /tmp/.X11-unix:/tmp/.X11-unix
+
+volumes:
+  IntellijIdeaRoot:
+  IdeaProjects:
