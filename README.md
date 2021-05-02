@@ -1,11 +1,11 @@
 # IntelliJ-IDEA-Docker
 ![Project-Banner](/readme/project-banner.png)
 
-# About
-IntelliJ IDEA IDE Community Edition IDE in a docker container. Provides a full Java IDE in a docker container with Open JDK. 
+## About
+IntelliJ IDEA IDE Community Edition IDE in a docker container. Provides a full Java IDE in a docker container with Open JDK.
 
-# Usage
-## Windows:
+## Usage
+### Windows:
 1. [Install Docker/Compose](https://docs.docker.com/compose/install/). You must have Docker and Compose installed to run your Jekyll project in Docker.
 
 2. [Install GWSL](https://opticos.github.io/gwsl/). GWSL handles running XServer on top of WSL. (Graphical Windows Subsystem for Linux)
