@@ -1,9 +1,10 @@
 # IntelliJ-IDEA-Docker
 ![Project-Banner](/readme/project-banner.png)
 
-IntelliJ IDEA IDE Community Edition in a docker container
+# About
+IntelliJ IDEA IDE Community Edition IDE in a docker container. Provides a full Java IDE in a docker container with Open JDK. 
 
-
+# Usage
 ## Windows:
 1. [Install Docker/Compose](https://docs.docker.com/compose/install/). You must have Docker and Compose installed to run your Jekyll project in Docker.
 
