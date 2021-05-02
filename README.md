@@ -22,7 +22,7 @@ docker-compose up
 ```
 
 
-## macOs:
+### macOs:
 1. [Install Docker/Compose](https://docs.docker.com/compose/install/). You must have Docker and Compose installed to run your Jekyll project in Docker.
 
 2. Install [Homebrew](https://brew.sh) using Terminal
